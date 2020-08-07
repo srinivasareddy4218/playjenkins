@@ -2,7 +2,7 @@ pipeline {
 
   agent any                
   
-  # { label 'kubepod' }
+  //{ label 'kubepod' }
   stages {
 
     stage('Checkout Source') {
