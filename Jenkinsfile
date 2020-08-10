@@ -16,7 +16,7 @@ pipeline {
     stage('Deploy App') {
       steps {
         script {
-        sh "kubectl apply -f nginx.yaml "
+        sh "export KUBECONFIG=/etc/kubernetes/admin.conf && kubectl apply -f nginx.yaml"
         }
       }
     }
