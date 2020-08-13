@@ -20,7 +20,7 @@ node{
          sh "gcloud config set compute/zone us-central1-c"
          sh "gcloud config set compute/region us-central1"
          sh "gcloud container clusters get-credentials cluster-1 --zone us-central1-c --project mssdevops-284216"
-         sh "sed -i -e 's,image_to_be_deployed,'maniengg/spring-boot-mongo:${BUILD_ID}',g' myweb.yaml"
+         sh "sed -i -e 's,image_to_be_deployed,' maniengg/webappmss:${BUILD_ID}',g' myweb.yaml"
          sh "kubectl apply -f myweb.yaml"
         }
       }
