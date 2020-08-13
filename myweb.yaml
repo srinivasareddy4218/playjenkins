@@ -28,11 +28,10 @@ metadata:
     app: myweb
   name: myweb
 spec:
+  type: LoadBalancer
   ports:
-  - nodePort: 32223
-    port: 80
-    protocol: TCP
-    targetPort: 80
+    - port: 80
+      targetPort: 8080
   selector:
     app: myweb
   type: NodePort
