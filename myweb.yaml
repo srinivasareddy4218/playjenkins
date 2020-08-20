@@ -10,11 +10,7 @@ spec:
   selector:
     matchLabels:
       app: myweb
-  template:
-    metadata:
-      labels:
-        app: myweb
-    spec:
+     spec:
       containers:
       - image: srinivasareddy4218/webappmss:latest
         imagePullPolicy: Always
