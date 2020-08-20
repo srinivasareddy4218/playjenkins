@@ -16,7 +16,7 @@ spec:
         app: myweb
     spec:
       containers:
-      - image: image_to_be_deployed
+      - image: srinivasareddy4218/webappmss:latest
         imagePullPolicy: Always
         name: myweb
 
